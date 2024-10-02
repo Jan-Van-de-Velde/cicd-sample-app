@@ -1,4 +1,4 @@
 *.log
 *.sql
 *.sqlite
-webapp/database/
+webapp/database/*

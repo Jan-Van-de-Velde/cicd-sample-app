@@ -19,5 +19,7 @@ jobs:
           node-version: "20"
       - name: Install dependencies
         run: yarn install
+        working-directory: webapp
       - name: Lint code
         run: yarn lint
+        working-directory: webapp
