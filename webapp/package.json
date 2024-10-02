@@ -1,0 +1,31 @@
+{
+  "name": "demo-webapp",
+  "version": "1.0.0",
+  "description": "Demo webapp for the course Machine Learning Operations at HOGENT",
+  "author": "Thomas Aelbrecht <thomas.aelbrecht@hogent.be>",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "mocha tests/animals.spec.js",
+    "lint": "eslint . --ext .js"
+  },
+  "dependencies": {
+    "@fakerjs/animal": "^2.2.0",
+    "@hapi/boom": "^10.0.1",
+    "demo-webapp": "file:",
+    "express": "^4.19.2",
+    "knex": "^3.1.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "eslint": "^9.8.0",
+    "mocha": "^10.7.0",
+    "node-fetch": "^3.3.2"
+  }
+}
