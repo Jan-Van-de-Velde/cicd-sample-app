@@ -38,5 +38,5 @@ jobs:
         with:
           push: true
           context: ./webapp
-          file: ./webapp/Dockerfil
+          file: ./webapp/dockerfile
           tags: leduude/webapp:latest

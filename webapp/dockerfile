@@ -1,0 +1,7 @@
+FROM node:lts-alpine
+EXPOSE 3000
+WORKDIR /app
+COPY ./webapp /app
+RUN yarn install
+RUN yarn install --frozen-lockfile
+CMD ["node", "src/index.js"]
