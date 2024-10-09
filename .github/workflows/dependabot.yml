@@ -1,14 +1,7 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: "npm"
+    directory: "/" # Adjust this if your package.json is in a different directory
     schedule:
-      # Check for updates to GitHub Actions every week
-      interval: "weekly"
-    # Define event triggers for the updates
-    commit-message:
-      prefix: "fix" # Example: customize commit message prefix
-    on:
-      push:
-        branches:
-          - main
+      interval: "weekly" # Options: "daily", "weekly", "monthly"
+    open-pull-requests-limit: 5 # Limit the number of open PRs
