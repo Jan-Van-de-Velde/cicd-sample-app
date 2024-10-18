@@ -1,7 +1,9 @@
+# Set update schedule for GitHub Actions
+
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/" # Adjust this if your package.json is in a different directory
+  - package-ecosystem: "github-actions"
+    directory: "/"
     schedule:
-      interval: "weekly" # Options: "daily", "weekly", "monthly"
-    open-pull-requests-limit: 5 # Limit the number of open PRs
+      # Check for updates to GitHub Actions every week
+      interval: "weekly"
