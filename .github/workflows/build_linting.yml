@@ -1,5 +1,5 @@
 ---
-name: Build and test original
+name: Build and test with linting
 on:
   push:
     branches:
@@ -19,7 +19,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20.9.0"
+          node-version: 20
+      - run: npm ci
+      - run: npm test
       - name: Install dependencies
         run: yarn install
         working-directory: webapp
