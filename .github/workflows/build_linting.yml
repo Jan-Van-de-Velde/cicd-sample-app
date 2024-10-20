@@ -26,7 +26,6 @@ jobs:
       - name: Lint code
         run: yarn lint
         working-directory: webapp/src
-        working-directory: webapp
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
       - name: Set up Docker Buildx
