@@ -25,6 +25,7 @@ jobs:
         working-directory: webapp
       - name: converting config
         run: npx @eslint/migrate-config .eslintrc.json
+        working-directory: webapp
       - name: Lint code
         run: yarn lint
         working-directory: webapp
