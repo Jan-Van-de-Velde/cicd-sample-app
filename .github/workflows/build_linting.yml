@@ -27,7 +27,7 @@ jobs:
         run: npx @eslint/migrate-config .eslintrc.json
         working-directory: webapp
       - name: Lint code
-        run: yarn lint
+        run: yarn lint --fix
         working-directory: webapp
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
