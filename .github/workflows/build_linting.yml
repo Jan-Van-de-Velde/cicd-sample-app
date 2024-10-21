@@ -23,6 +23,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
         working-directory: webapp
+      - name: converting config
+        run: npx @eslint/migrate-config .eslintrc.json
       - name: Lint code
         run: yarn lint
         working-directory: webapp
